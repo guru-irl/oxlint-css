@@ -1,0 +1,23 @@
+/* Sample CSS file with intentional lint errors */
+
+.container {
+  display: flex;
+  colour: red; /* invalid property */
+  font-size: 16px;
+}
+
+.empty-block {
+}
+
+@import url("base.css");
+@import url("base.css"); /* duplicate import */
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+  0% { transform: rotate(360deg); } /* duplicate keyframe selector */
+}
+
+.warning {
+  color: red !important; /* no-important */
+}

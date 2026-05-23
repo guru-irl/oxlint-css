@@ -2,12 +2,18 @@
   "name": "oxlint-css",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "CSS linting with oxlint using eslint-plugin-css via jsPlugins",
   "scripts": {
-    "lint": "oxlint"
+    "lint": "oxlint && eslint .",
+    "lint:oxlint": "oxlint",
+    "lint:eslint": "eslint ."
   },
   "devDependencies": {
-    "oxlint": "latest",
-    "eslint-plugin-css": "latest"
+    "@eslint/css": "^1.2.0",
+    "eslint": "^10.4.0",
+    "eslint-plugin-css": "latest",
+    "eslint-plugin-oxlint": "^1.66.0",
+    "oxlint": "latest"
   }
 }

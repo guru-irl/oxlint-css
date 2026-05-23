@@ -1,0 +1,13 @@
+{
+  "name": "oxlint-css",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CSS linting with oxlint using eslint-plugin-css via jsPlugins",
+  "scripts": {
+    "lint": "oxlint"
+  },
+  "devDependencies": {
+    "oxlint": "latest",
+    "eslint-plugin-css": "latest"
+  }
+}

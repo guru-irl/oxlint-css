@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "jsPlugins": ["eslint-plugin-css"],
+  "ignorePatterns": ["node_modules"],
+  "rules": {
+    "css/no-dupe-properties": "error",
+    "css/no-invalid-color-hex": "error",
+    "css/no-shorthand-property-overrides": "error",
+    "css/no-unknown-property": "warn",
+    "css/no-unknown-unit": "error"
+  }
+}
